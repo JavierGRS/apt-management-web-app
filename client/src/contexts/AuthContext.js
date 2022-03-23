@@ -11,21 +11,19 @@ export function useAuth() {
 export function AuthProvider({ children }) {
   const [currentUser, setCurrentUser] = useState()
   const [loading, setLoading] = useState(true)
-  const [token, setToken] = useState()
 
-  async function signup(email, password, userName, aptID) {
-
+  async function signup({ email, password, userName, apartmentID, workerType }) {
     auth.createUserWithEmailAndPassword(email, password)
       .then(doc => {
         postSignUp({
           userID: doc.user.uid,
           userName: userName,
-          apartmentID: aptID,
+          apartmentID: apartmentID,
+          workerType: workerType
         })
       }).catch(function (error) {
         return error
       })
-
   }
 
   function login(email, password) {
@@ -53,10 +51,6 @@ export function AuthProvider({ children }) {
     const unsubscribe = auth.onAuthStateChanged(user => {
       setCurrentUser(user)
       setLoading(false)
-
-      // console.log(auth.currentUser.getIdToken())
-      // setToken(auth.currentUser.getIdToken())
-
     })
     return unsubscribe
 
@@ -65,8 +59,6 @@ export function AuthProvider({ children }) {
 
   const value = {
     currentUser,
-    setToken,
-    token,
     login,
     signup,
     logout,

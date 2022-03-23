@@ -4,7 +4,7 @@ import url from "../constants/url";
 
 export async function postSignUp(props) {
 
-    const completeURL = url + `/api/signUp/userID/${props.userID}?userName=${props.userName}&aptID=${props.apartmentID}`
+    const completeURL = url + `/api/signUp/userID/${props.userID}?userName=${props.userName}&aptID=${props.apartmentID}&workerType=${props.workerType}`
     // const url = `http://localhost:5000/api/signUp/userID/${props.userID}?userName=${props.userName}&aptID=${props.apartmentID}`
 
     return await axios.post(completeURL, {
