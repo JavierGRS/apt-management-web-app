@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.js": "/static/js/main.149c9150.chunk.js",
+    "main.js.map": "/static/js/main.149c9150.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.eeaa320a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.eeaa320a.js.map",
+    "static/css/2.bb65b29e.chunk.css": "/static/css/2.bb65b29e.chunk.css",
+    "static/js/2.6a6829d9.chunk.js": "/static/js/2.6a6829d9.chunk.js",
+    "static/js/2.6a6829d9.chunk.js.map": "/static/js/2.6a6829d9.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.50ceb3fac467f73ef4d0d63aae422edb.js": "/precache-manifest.50ceb3fac467f73ef4d0d63aae422edb.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.bb65b29e.chunk.css.map": "/static/css/2.bb65b29e.chunk.css.map",
+    "static/js/2.6a6829d9.chunk.js.LICENSE.txt": "/static/js/2.6a6829d9.chunk.js.LICENSE.txt",
+    "static/media/bootstrap-icons.css": "/static/media/bootstrap-icons.c5787b4a.woff2",
+    "static/media/logo-olecosta.svg": "/static/media/logo-olecosta.b3cd613a.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.eeaa320a.js",
+    "static/css/2.bb65b29e.chunk.css",
+    "static/js/2.6a6829d9.chunk.js",
+    "static/js/main.149c9150.chunk.js"
+  ]
+}
