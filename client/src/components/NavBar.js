@@ -22,17 +22,14 @@ export default function NavBar({ interfaceName }) {
 
     return (
         <>
-            <Navbar collapseOnSelect expand="sm" bg="dark" variant="dark" sticky="top" className="">
-                <img
-                    src={logo}
-                    width="30%"
-                    height="35"
-                    className='p-0 m-0 m'
-                // className="d-inline-block align-top"
-                // alt="React Bootstrap logo"
-                />
-                <Navbar.Brand href="/" className="p-0">
-                    {interfaceName}
+            <Navbar collapseOnSelect expand="sm" bg="dark" variant="dark" sticky="top">
+                <Navbar.Brand href="/" className="">
+                    {/* <img
+                        src={logo}
+                        alt="logo"
+                        className='w-25'
+                    /> */}
+                    <strong className="white-text">{interfaceName}</strong>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
