@@ -44,8 +44,6 @@ export default function NewWorker() {
         } catch (error) {
             setError("Failed to create an account")
         }
-
-
     }
 
     async function setup() {
